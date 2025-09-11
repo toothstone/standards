@@ -2,6 +2,8 @@
 
 FROM python:3.10
 
+RUN apt-get update && apt-get install tini
+
 WORKDIR /scs-compliance
 
 COPY requirements.txt requirements.txt
